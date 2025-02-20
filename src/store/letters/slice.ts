@@ -75,7 +75,7 @@ const lettersSlice = createSlice({
 
             state.status.push(newRow)
         },
-        resetLetters(_, action?: PayloadAction<string | null>) {
+        resetLetters(_, action: PayloadAction<string | null>) {
             return generateInitialState(action?.payload ?? null);
         }
     },

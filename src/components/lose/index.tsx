@@ -30,7 +30,7 @@ function Lose() {
     }
 
     const restartGameFunc = () => {
-        dispatch(restartGame())
+        dispatch(restartGame(null))
 
         document.removeEventListener("keydown", keyFunc)
     }

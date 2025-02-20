@@ -12,7 +12,7 @@ export const restartGame = createAsyncThunk<void, string | null, { dispatch: App
 
         dispatch(resetActiveCell());
         dispatch(setIsOpened(false));
-        dispatch(resetLetters(word?.toLowerCase()));
+        dispatch(resetLetters(word !== undefined && word !== null ? word.toLowerCase() : null));
         dispatch(resetOpenedLetters());
         dispatch(setColumn({current: 0, length}));
     }
