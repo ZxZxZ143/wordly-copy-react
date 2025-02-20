@@ -13,12 +13,12 @@ function CreateWord({setIsGenerateWord}: { setIsGenerateWord: React.Dispatch<Set
         setValue(event.target.value)
     }
 
-    const generate = useCallback(() => {
+    const generate = () => {
         if (/^[А-я]{4,11}$/.test(value)) {
             dispatch(restartGame(value))
             setIsGenerateWord(false)
         }
-    }, [])
+    }
 
     useEffect(() => {
         const keyFunc = (event:KeyboardEvent) => {
