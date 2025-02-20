@@ -1,5 +1,5 @@
 import Style from "./createWord.module.scss"
-import {ChangeEvent, SetStateAction, useCallback, useEffect, useState} from "react";
+import {ChangeEvent, SetStateAction, useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
 import {AppDispatch} from "../../store/store.ts";
 import {restartGame} from "../../store/isEnd/asyncAction.ts";
