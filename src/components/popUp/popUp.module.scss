@@ -1,0 +1,69 @@
+@import "./../../mixin";
+
+.background {
+  @include center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  padding-bottom: 20vh;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(0.5px);
+  color: white;
+
+  .container {
+    @include center;
+    flex-direction: column;
+    background: #26283A;
+    width: 350px;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 100px -40px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    font-size: 14px;
+
+    .header {
+      background: #313448;
+      position: relative;
+      padding: 10px 0;
+      width: 100%;
+
+      p {
+        @include center;
+        background: inherit;
+        font-size: 18px;
+      }
+
+      button {
+        background: none;
+        border: none;
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        padding: 0;
+        line-height: 0;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        svg {
+          fill: #a5aaca;
+          transition: .2s;
+
+          &:hover {
+            fill: white;
+          }
+        }
+      }
+    }
+
+    .main {
+      @include center;
+      flex-direction: column;
+      padding: 10px 0 30px;
+      gap: 10px;
+    }
+  }
+}

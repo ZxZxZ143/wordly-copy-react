@@ -1,0 +1,18 @@
+@import "./../../mixin";
+
+.container {
+  @include center;
+  flex-direction: column;
+  gap: 10px;
+  color: #c3c7e0;
+
+  input {
+    padding: 10px;
+    background: #393C54;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: white;
+  }
+}

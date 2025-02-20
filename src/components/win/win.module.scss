@@ -1,0 +1,21 @@
+@import "./../../mixin";
+
+.answer_block {
+  @include center;
+  flex-direction: column;
+  gap: 10px;
+
+  button {
+    padding: 10px 30px;
+    background: #57AC57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+
+    &:active {
+      transform: scaleX(1.1);
+    }
+  }
+}

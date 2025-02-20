@@ -1,0 +1,27 @@
+@import "./../../mixin";
+
+.container {
+  @include center;
+
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (max-width: 1200px) {
+    gap: 5px;
+  }
+
+  @media (max-width: 600px) {
+    gap: 5px;
+  }
+
+  .row {
+    @include center;
+
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    gap: 5px;
+  }
+}

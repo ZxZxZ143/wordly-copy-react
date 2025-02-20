@@ -1,0 +1,20 @@
+@import "../../mixin";
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+
+  .row {
+    @include center;
+    width: 100%;
+    gap: 5px;
+  }
+}

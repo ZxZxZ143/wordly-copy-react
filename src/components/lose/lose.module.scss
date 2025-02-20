@@ -1,0 +1,52 @@
+@import "./../../mixin";
+
+.answer_block {
+  position: relative;
+  @include center;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    text-align: center;
+    cursor: default;
+
+    &:first-child {
+      color: #c3c7e0;
+    }
+  }
+
+  .word {
+    display: block;
+    width: fit-content;
+    padding: 10px 15px;
+    background: #40445C;
+    border: 2px dashed #676D8E;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+  }
+
+  a {
+    color: #7999e1;
+    cursor: pointer;
+    font-size: 12px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+button {
+  padding: 10px 30px;
+  background: #57AC57;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s;
+
+  &:active {
+    transform: scaleX(1.1);
+  }
+}

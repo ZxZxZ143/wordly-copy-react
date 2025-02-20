@@ -1,0 +1,53 @@
+@import "./../../mixin";
+
+.container {
+  @include center;
+  height: 45px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  justify-content: space-between;
+
+  .side {
+    @include center;
+    gap: 10px;
+
+    div {
+      @include center;
+      width: 34px;
+      height: 34px;
+      padding: 0 3px;
+      background: #40445C;
+      color: #dfe1f3;
+      cursor: pointer;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: .3s;
+
+      &:hover {
+        background: #2A402F;
+        color: #dfe1f3;
+      }
+
+      &:hover > svg {
+        fill: #dfe1f3;
+      }
+    }
+
+    .surrender {
+      width: fit-content;
+      padding: 0 14px;
+
+      &:hover {
+        background: #4A3D54;
+      }
+    }
+
+    svg {
+      fill: #dfe1f3;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

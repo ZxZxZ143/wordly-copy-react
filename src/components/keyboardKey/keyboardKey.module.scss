@@ -1,0 +1,60 @@
+@import "./../../mixin";
+
+.cell {
+  @include center;
+  flex: 1 1;
+  height: 36px;
+  padding: 3px 3px;
+  background: #656780;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.6;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.1s;
+  box-sizing: content-box;
+
+  @media (max-width: 800px) {
+    height: 30px;
+  }
+
+  @media (max-width: 700px) {
+    height: 26px;
+    font-size: 13px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  input:focus + & {
+    background: #787A94;
+  }
+
+  &:hover {
+    background: #787A94;
+  }
+
+  svg {
+    fill: white;
+    margin: 0 10px;
+  }
+}
+
+.wide {
+  flex: 2 1;
+}
+
+.missed {
+  background: #3D4054;
+}
+
+.onPlace {
+  background: #79B851;
+}
+
+.inWord {
+  background: #F3C237;
+}
